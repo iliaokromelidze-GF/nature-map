@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-const kmlLayer = omnivore.kml('places.kml')
+const kmlLayer = omnivore.kml('https://www.google.com/maps/d/kml?mid=1-d0XN37XpN07tDnBD3Hkv-V7YgQXP_8&forcekml=1')
   .on('ready', function () {
     map.fitBounds(kmlLayer.getBounds());
 
