@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f3;
+  color: #1f2d24;
+}
+
+header {
+  padding: 18px 24px;
+  background: #234f3a;
+  color: white;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+header p {
+  margin: 0;
+}
+
+.filters {
+  padding: 12px;
+  background: white;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+
+.filters button {
+  border: 1px solid #b7c8bd;
+  background: #ffffff;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#map {
+  height: calc(100vh - 135px);
+  width: 100%;
+}

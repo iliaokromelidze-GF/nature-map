@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>საქართველოს ბუნების ღირსშესანიშნაობები</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>საქართველოს ბუნების ღირსშესანიშნაობები</h1>
+    <p>ტბები, ჩანჩქერები, კანიონები, მღვიმეები და სხვა ბუნებრივი ადგილები</p>
+  </header>
+
+  <div class="filters">
+    <button onclick="showAll()">ყველა</button>
+    <button onclick="filterByCategory('ჩანჩქერი')">ჩანჩქერები</button>
+    <button onclick="filterByCategory('კანიონი')">კანიონები</button>
+    <button onclick="filterByCategory('ტბა')">ტბები</button>
+    <button onclick="filterByCategory('მღვიმე')">მღვიმეები</button>
+  </div>
+
+  <div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+<script src="places.js"></script>
+</body>
+</html>
